@@ -1,13 +1,13 @@
 /* Colors indicated by Odin Project */
 :root {
-    --dark-background-color: #1F2937;
+    --dark-background-color: #A8A199;
     --hero-background-color: #1F2937;
-    --hero-secondary-text: #E5E7EB;
-    --header-logo-text: #F9FAF8;
+    --hero-secondary-text: #A8A199;
+    --header-logo-text: #1D1D1B;
     --button-color: #3882F6;
-    --call-background: #3882F6;
+    --call-background: #7A756F;
     --information-header-text: #1F2937;
-    --quote-section-background: #E5E7EB;
+    --quote-section-background: #A8A199;
     --quote-text: #1F2937;
 }
 
@@ -33,8 +33,8 @@ body {
     flex-direction: column;
     width: 100vw;
     background-image:
-        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
-        url('../media/vikingback.jpg');
+        linear-gradient(rgba(0,0, 0, .5), rgba(0, 0, 0, 1)),
+        url('../media/geneticback.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -108,7 +108,7 @@ body {
 
 #hero-p {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #1D1D1B;
 
 }
 
@@ -137,7 +137,8 @@ body {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    color: var(--header-logo-text);
+    /* color: var(--header-logo-text); */
+    color: #A8A199;
 }
 
 #info-title {
@@ -148,11 +149,12 @@ body {
 }
 
 .info-image {
+    flex: 1;
     border: solid 4px var(--call-background);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: var(--hero-secondary-text);
     width: 100%;
-    height: auto;
+    height: 40%;
     transition: all 400ms cubic-bezier(.47, 1.64, .41, .8);
 }
 
@@ -161,8 +163,9 @@ body {
 }
 
 .info-image img {
+    flex: 1;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .quote-container {
@@ -224,6 +227,8 @@ body {
 
 .col-container p {
     flex: 1;
+    font-size: 26px;
+    text-align: center;
 }
 
 #hero-title {
