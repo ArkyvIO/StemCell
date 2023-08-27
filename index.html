@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Odin Project - Landing Page</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/lity.css" />
   </head>
 
   <body>
@@ -45,8 +46,7 @@
             what interests us in healthcare and what could help us to better
             understand the prediction, prevention, diagnosis, and treatment of
             diseases.
-
-            <br />
+            <br /><br />
             Genetic Engineering is the deliberate modification of the
             characteristics of an organism by manipulating its genetic material.
             We have many uses for genetic engineering such as the way we produce
@@ -60,10 +60,10 @@
             that changing crops to prevent pathogen destruction could introduce
             new allergens into the food supply.
           </div>
-          <div id="hero-image">
-            <img src="media/data.svg" />
-          </div>
         </div>
+        <!-- <div id="hero-image">
+          <img src="media/data.svg" />
+        </div> -->
       </div>
     </div>
     <div class="info-container">
@@ -79,7 +79,8 @@
             <p>
               Somatic cells are any cell of a living organism other than the
               reproductive cells. These consist of things like nerve cells and
-              skin cells.
+              skin cells. These cells, when altered using genetic engineering,
+              affect the host.
             </p>
           </div>
           <div class="col-container">
@@ -90,7 +91,8 @@
               Stem cells are special human cells that are able to develop into
               many different cell types. These types of cells can range from
               muscle cells to brain cells and in some cases they can also fix
-              damaged tissues.
+              damaged tissues. These cells, when altered, do affect future
+              offspring.
             </p>
           </div>
         </div>
@@ -100,8 +102,15 @@
       <div class="size-container">
         <div class="size2-container">
           <div class="col-container">
-            <h2 id="quote">ETHICAL CONSIDERATIONS</h2>
-            <div id="quote-source">-Kismekia</div>
+            <h2 id="quote">
+              "I see nothing wrong ethically with the idea of correcting single
+              gene defects through genetic engineering. But I am concerned about
+              any other kind of intervention, for anything else would be an
+              experiment, which would impose our will on future generations and
+              take unreasonable chances with their welfare ... Thus such
+              intervention is beyond the scope of consideration."
+            </h2>
+            <div id="quote-source">-Ian Wilmut</div>
           </div>
         </div>
       </div>
@@ -116,7 +125,13 @@
               genetic engineering.
             </p>
           </div>
-          <div id="sign-up-button">View Video</div>
+          <div id="sign-up-button">
+            <a
+              href="https://www.youtube.com/embed/sweN8d4_MUg?si=ScFxf9hhd1Ylp7Vw"
+              data-lity
+              >View Here</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -127,5 +142,6 @@
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/lity.js"></script>
   </body>
 </html>
